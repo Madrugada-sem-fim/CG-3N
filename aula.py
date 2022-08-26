@@ -1150,7 +1150,8 @@ if pagina == 'Cálculo':
                         st.write('')
                 if resultado_selectbox == 'Sim':
                     st.write('')
-                    st.markdown(f"<h2 style = 'text-align: center;'>Resultados Obtidos para o Trabalho '{trabalho}'</h2>", unsafe_allow_html=True)
+                    st.markdown(f"<h2 style = 'text-align: center;'>Resultados Obtidos para o Trabalho:</h2>", unsafe_allow_html=True)
+                    st.markdown(f"<h2 style = 'text-align: center;'>'{trabalho}'</h2>", unsafe_allow_html=True)
                     f'''
                     #### A seguir vc encontrará as abas com os resultados obtidos pelo método, na seguinte distribuição:
                     - Etapa 1 - Os valores relacioanos ao Método CRITIC - Peso dos Critérios;
@@ -1235,7 +1236,7 @@ if pagina == 'Cálculo':
 
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1339,7 +1340,7 @@ if pagina == 'Cálculo':
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1428,7 +1429,7 @@ if pagina == 'Cálculo':
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1486,7 +1487,7 @@ if pagina == 'Cálculo':
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1548,7 +1549,7 @@ if pagina == 'Cálculo':
                                                     
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1607,7 +1608,7 @@ if pagina == 'Cálculo':
                                                     
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1654,7 +1655,7 @@ if pagina == 'Cálculo':
                                                                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
                             writer.save()
-                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar o Resultado Compilado das Ordenações, em um só documento, clique no botão a baixo:</h3>", unsafe_allow_html=True)
+                            st.markdown("<h3 style = 'text-align: center;'>Para Baixar o Resultado Compilado das Ordenações, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
                                 st.download_button(
@@ -1691,10 +1692,9 @@ if pagina == 'Sobre':
     '''
     
     st.markdown(f"<h3 style = 'text-align: center;'>Para Citar este site:</h3>", unsafe_allow_html=True)
-    st.markdown(f"<h4 style = 'text-align: center;'>Almeida, Isaque David Pereira; Hermogenes, Lucas Ramon dos Santos; Gomes, Carlos Francisco Simões.; Santos, Marcos dos. \nCRITIC-GRA-3N (CG-3N) For Decision Making (v1), Universidade Federal Fluminense, Niterói, Rio de Janeiro, 2022.</h4>", unsafe_allow_html=True)
-
+    st.markdown(f"<h6 style = 'text-align: center;'>Almeida, Isaque David Pereira; Hermogenes, Lucas Ramon dos Santos; Gomes, Carlos Francisco Simões.; Santos, Marcos dos. \nCRITIC-GRA-3N (CG-3N) For Decision Making (v1), Universidade Federal Fluminense, Niterói, Rio de Janeiro, 2022.</h6>", unsafe_allow_html=True)
     st.write('')
-    st.markdown(" #### Caso deseje adquirir conteúdo de qualidade sobre dezenas de outros métodos para apoio a tomada de decisão, aprendendo passo-a-passo como utiliza-los, acesse: ")
+    st.markdown(" ##### Caso deseje adquirir conteúdo de qualidade sobre dezenas de outros métodos para apoio a tomada de decisão, aprendendo passo-a-passo como utiliza-los, acesse: ")
     st.markdown(" #### *Casa da Pesquisa Operacional* - [Youtube](https://www.youtube.com/c/CasadaPesquisaOperacional)")
 
 
@@ -1717,6 +1717,7 @@ if pagina == 'Autores':
     st.markdown("📜 [Currículo Lattes](http://lattes.cnpq.br/5534398558592175)")
     st.markdown("🖥️ [Researshgate](https://www.researchgate.net/profile/Marcos-Santos-85)")
     st.markdown("💻 [Linkedin](https://www.linkedin.com/in/profmarcosdossantos/)")
+    #imagem = st.image('https://www.youtube.com/s/desktop/70ea5db2/img/favicon_32x32.png') 
     st.markdown(" **Casa da Pesquisa Operacional** - [YouTube](https://www.youtube.com/c/CasadaPesquisaOperacional)")
 
     st.markdown(' #### ✔️ Prof. DSc. Carlos Francisco Simões Gomes')
