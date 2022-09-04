@@ -47,7 +47,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://i.ibb.co/Mp7NX94/CRITIC-GRA-3-N-site-1700-800-px-12.png");
+             background: url("https://i.ibb.co/qYTLTLR/Fundo-site-1700-800-px-1.png");
              
              background-size: cover
          }}
