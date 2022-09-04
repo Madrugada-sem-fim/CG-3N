@@ -71,6 +71,7 @@ if 'numero_criterio' not in st.session_state: st.session_state['numero_criterio'
 if 'coeficiente' not in st.session_state: st.session_state['coeficiente'] = 0
 if 'botao_inclusao_da_matriz' not in st.session_state: st.session_state['botao_inclusao_da_matriz'] = 0
 if 'nome_trabalho' not in st.session_state: st.session_state['nome_trabalho'] = 0
+if 'inicio_calculo' not in st.session_state: st.session_state['inicio_calculo'] = 0
 
 st.sidebar.write('')
 st.sidebar.write('')
@@ -217,10 +218,12 @@ if pagina == 'Cálculo':
                 - Valor sugerido para o Coeficiente de Distinção é de 0.87
             '''
                 botao_coeficiente = st.form_submit_button('Confirmar o valor do Coeficiente de Distinção.')
+                if botao_coeficiente:
+                    st.session_state.botao_inclusao_da_matriz = 1
         
 
         #df2 = st.dataframe(np.zeros((n_alternativas,n_criterios)))                                # um teste para travar o programa e nao permitir ele rodar ate o usuario apertar o botao_inclusao_matriz
-        if lista_criterios[-1] is not "":                               #verificar se é "" ou None
+        if st.session_state.botao_inclusao_da_matriz == 1:      #lista_criterios[-1] is not "":                               #verificar se é "" ou None
             st.write('A matriz de decisão é:')
             matrix = np.zeros((n_alternativas,n_criterios))
             df = pd.DataFrame(matrix,index = lista_alternativas,columns=lista_criterios)
@@ -258,13 +261,13 @@ if pagina == 'Cálculo':
                 #[49,50,51,52,53,54],                     # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 #[60,59,58,57,56,55]]                     # retirar isso aqui  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 if botao_inclusao_matriz:
-                    st.session_state.botao_inclusao_da_matriz = 1
+                    st.session_state.inicio_calculo = 1
 #===============================================================================================
 #===============================================================================================
                                 #INICIO DOS CALCULOS
 #===============================================================================================
 #===============================================================================================
-        if st.session_state.botao_inclusao_da_matriz == 1:
+        if st.session_state.inicio_calculo == 1:
             soma_valores_inseridos = df2.sum()
             soma_total = soma_valores_inseridos.sum()
             if soma_total <= (n_alternativas * n_criterios):
