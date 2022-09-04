@@ -47,7 +47,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://i.ibb.co/SdGtNMp/CRITIC-GRA-3-N-site-1700-800-px-11.png");
+             background: url("https://i.ibb.co/Mp7NX94/CRITIC-GRA-3-N-site-1700-800-px-12.png");
              
              background-size: cover
          }}
@@ -1730,4 +1730,4 @@ if pagina == 'Autores':
 
 
 st.write('')
-st.image('imagem rodape.jpeg', caption='Para Citar: Almeida, Isaque David Pereira; Hermogenes, Lucas Ramon dos Santos; Gomes, Carlos Francisco Simões.; Santos, Marcos dos. \nCRITIC-GRA-3N (CG-3N) For Decision Making (v1), Universidade Federal Fluminense, Niterói, Rio de Janeiro, 2022.')
+st.image('imagem rodape.jpeg', caption='Almeida, Isaque David Pereira; Hermogenes, Lucas Ramon dos Santos; Gomes, Carlos Francisco Simões.; Santos, Marcos dos. \nCRITIC-GRA-3N (CG-3N) For Decision Making (v1), Universidade Federal Fluminense, Niterói, Rio de Janeiro, 2022.')
