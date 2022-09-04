@@ -3,17 +3,10 @@ import pandas as pd                 # CRIAÇÃO DA DATAFRAMES (TABELAS)
 import numpy as np                  # OPERAÇÕES ALGÉBRICAS
 from st_aggrid import AgGrid
 from random import random
-#import math as mt                   # FUNÇÕES MATEMÁTICAS
-#import statistics as stt             # Importantes sobre médias, medianas, desvio padrao https://www.youtube.com/watch?v=Ztft4ggLPdg
-#from typing import Type             # Plotar resultados com o grafico deitado
-#import altair as alt                #plotar graficos mais simples
 import seaborn as sns             # Apresentação de um grafico com mapa de calor
 import matplotlib.pyplot as plt   # Plotar o resultado em gráficos 
-#import plotly.express as px       # Plotar o resultado em grafico como o matplotlib
-#import graphviz as graphviz        # Fluxo na forma de Grafo
 import io
 from scipy.stats import norm
-#from scipy import stats
 
 
 st.set_page_config(page_title="CRITIC-GRA-3N (CG-3N)",page_icon="inicio_site.png",layout="centered")
@@ -47,7 +40,7 @@ def set_bg_hack_url():
          f"""
          <style>
          .stApp {{
-             background: url("https://i.ibb.co/qYTLTLR/Fundo-site-1700-800-px-1.png");
+             background: url("https://i.ibb.co/fqhVmSR/Fundo-site-1700-800-px-2.png");
              
              background-size: cover
          }}
