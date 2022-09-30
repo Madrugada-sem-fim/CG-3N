@@ -7,6 +7,8 @@ import seaborn as sns             # Apresentação de um grafico com mapa de cal
 import matplotlib.pyplot as plt   # Plotar o resultado em gráficos 
 import io
 from scipy.stats import norm
+import os                           #Para rodar no Hyroku
+from flask import Flask, request    #Pra rodar no Hyroku
 
 
 st.set_page_config(page_title="CRITIC-GRA-3N (CG-3N)",page_icon="inicio_site.png",layout="centered")
@@ -70,6 +72,7 @@ st.sidebar.write('')
 st.sidebar.write('')
 st.sidebar.markdown("**Para mais métodos e softwares acesse:** ")
 st.sidebar.markdown("'Casa da Pesquisa Operacional' - [Youtube](https://www.youtube.com/c/CasadaPesquisaOperacional)")
+st.sidebar.markdown("'Casa da Pesquisa Operacional' - [Instagram](https://instagram.com/casa_da_pesquisa_operacional?igshid=YmMyMTA2M2Y=)")
 st.sidebar.image('Casa da Pesquisa.jpeg', caption='Casa da Pesquisa Operacional')
 
 

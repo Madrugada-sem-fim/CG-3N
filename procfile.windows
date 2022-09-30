@@ -1,0 +1,1 @@
+web: python CG-3N.py runserver 0.0.0.0:5000
