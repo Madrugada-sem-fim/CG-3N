@@ -1234,7 +1234,7 @@ if pagina == 'Cálculo':
                             soma_indice_c.to_excel(writer, sheet_name='Índice C', startrow = n_criterios + 3)
 
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1338,7 +1338,7 @@ if pagina == 'Cálculo':
                             resultado.to_excel(writer, sheet_name='GRADE RELACIONAL CINZA')
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1427,7 +1427,7 @@ if pagina == 'Cálculo':
                             resultado_2n.to_excel(writer, sheet_name='GRADE RELACIONAL CINZA')
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1485,7 +1485,7 @@ if pagina == 'Cálculo':
                             resultado_3n.to_excel(writer, sheet_name='GRADE RELACIONAL CINZA')
                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1547,7 +1547,7 @@ if pagina == 'Cálculo':
                             resultado_n_4n.to_excel(writer, sheet_name='Média Aritmética das Alt')
                                                     
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1606,7 +1606,7 @@ if pagina == 'Cálculo':
                             resultado_n_5n.to_excel(writer, sheet_name='Média Geométrica das Alt')
                                                     
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar todas as Matrizes, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
@@ -1653,7 +1653,7 @@ if pagina == 'Cálculo':
                             Resultado_final_n.to_excel(writer, sheet_name='Resultados Compilados')
                                                                             
                             # Close the Pandas Excel writer and output the Excel file to the buffer
-                            writer.save()
+                            writer.close()
                             st.markdown("<h3 style = 'text-align: center;'>Para Baixar o Resultado Compilado das Ordenações, em um só documento, clique no botão:</h3>", unsafe_allow_html=True)
                             col1, col2, col3 = st.columns(3)
                             with col2:
