@@ -1153,15 +1153,15 @@ if pagina == 'Cálculo':
                     st.markdown(f"<h2 style = 'text-align: center;'>'{trabalho}'</h2>", unsafe_allow_html=True)
                     f'''
                     #### A seguir vc encontrará as abas com os resultados obtidos pelo método, na seguinte distribuição:
-                    <b>- Etapa 1 -</b> Os valores relacioanos ao Método CRITIC <b>- Peso dos Critérios</b>;
-                    <b>- Etapa 2 - Primeira Ordenação </b>- O resultado da ordenação do método CRITIC-GRA;
-                    <b>- Etapa 3 - Segunda Ordenação  </b>- O resultado da ordenação do método CRITIC-GRA - 2ª Normalização;
-                    <b>- Etapa 4 - Terceira Ordenação </b>- O resultado da ordenação do ponderação da 2ª Normalização com CRITIC;
-                    <b>- Etapa 5 - Quarta Ordenação   </b>- O resultado da Média Aritmética das três primeiras ordenações normalizadas;
-                    <b>- Etapa 6 - Quinta Ordenação   </b>- O resultado da Média Gométrica das três primeiras ordenações normalizadas;
-                    <b>- Gráficos dos resultados </b>- Apresenta todos os Gráficos para o peso e ordenações; e
-                    <b>- Resultado </b>- Apresenta uma matriz com a junção dos cinco resultados para facilitar na compreenção.
-                    '''
+                    - **Etapa 1 -** Os valores relacioanos ao Método CRITIC - **Peso dos Critérios**;
+                    - **Etapa 2 - Primeira Ordenação** - O resultado da ordenação do método CRITIC-GRA;
+                    - **Etapa 3 - Segunda Ordenação**  - O resultado da ordenação do método CRITIC-GRA - 2ª Normalização;
+                    - **Etapa 4 - Terceira Ordenação** - O resultado da ordenação do ponderação da 2ª Normalização com CRITIC;
+                    - **Etapa 5 - Quarta Ordenação**   - O resultado da Média Aritmética das três primeiras ordenações normalizadas;
+                    - **Etapa 6 - Quinta Ordenação**  - O resultado da Média Gométrica das três primeiras ordenações normalizadas;
+                    - **Gráficos dos resultados -** Apresenta todos os Gráficos para o peso e ordenações; e
+                    - **Resultado -** Apresenta uma matriz com a junção dos cinco resultados para facilitar na compreenção.
+                    ''' 
                     tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([ 
                                                     "📊 Etapa 1",
                                                     "📊 Etapa 2",
